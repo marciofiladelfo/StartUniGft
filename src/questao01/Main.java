@@ -20,13 +20,13 @@ public class Main {
             System.out.print("C: ");
             float c = num.nextFloat();
 
-            double delta = (Math.pow(b, 2) - (4*a*c));
+            float delta = (float) (Math.pow(b, 2) - (4*a*c));
             if(delta < 0){
                 System.out.println("Impossível calcular");
             }else {
-                double x1 = ((-b + Math.sqrt(delta)) / 2 * a);
-                double x2 = (-b - Math.sqrt(delta)) / 2 * a;
-                System.out.println(String.format("\nX1 = %.5f", x1));
+                float x1 = (float) ((-b + Math.sqrt(delta)) / 2 * a);
+                float x2 = (float) ((-b - Math.sqrt(delta)) / 2 * a);
+                System.out.println(String.format("X1 = %.5f", x1));
                 System.out.println(String.format("X2 = %.5f", x2));
             }
         }
