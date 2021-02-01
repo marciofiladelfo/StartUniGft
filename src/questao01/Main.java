@@ -24,8 +24,8 @@ public class Main {
             if(delta < 0){
                 System.out.println("Impossível calcular");
             }else {
-                float x1 = (float) ((-b + Math.sqrt(delta)) / 2 * a);
-                float x2 = (float) ((-b - Math.sqrt(delta)) / 2 * a);
+                float x1 = (float) ((-b + Math.sqrt(delta)) / (2 * a));
+                float x2 = (float) ((-b - Math.sqrt(delta)) / (2 * a));
                 System.out.println(String.format("X1 = %.5f", x1));
                 System.out.println(String.format("X2 = %.5f", x2));
             }
